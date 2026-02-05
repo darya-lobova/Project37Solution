@@ -1,5 +1,5 @@
 #include "util.h"
 
 void print(string s) {
-	cout << s << endl
+	cout << s << endl;
 }
