@@ -2,17 +2,13 @@
 
 bool are_all_digits_diffrent(long long number) {
 
-	int digit1;
-	int digit2;
+	int digit;
+	int all_digits = 0;
 
 	while (number > 0) {
-		digit1 = number % 10;
-		digit2 = number / 10;
-
-		if (digit1 != digit2) {
-			return true;
-		}
+		digit = number % 10;
 		number /= 10;
+
 	}
 
 	return false;
